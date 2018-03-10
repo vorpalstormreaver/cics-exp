@@ -1,4 +1,5 @@
 <%@page import="java.sql.*"%>
+<%@ page import="java.io.*,java.util.*" %>
 <%@page import="com.mysql.jdbc.PreparedStatement"%>
 <%@page import="com.mysql.jdbc.Connection"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -27,11 +28,22 @@
 				</div>
 			</header>
 
+      <%
+        String reqDisplay = "Performance ";
+
+         Enumeration paramNames = request.getParameterNames();
+         while(paramNames.hasMoreElements()) {
+            String paramName = (String)paramNames.nextElement();
+            reqDisplay = reqDisplay + "<b>" + paramName + ":</b> "+request.getParameter(paramName) + " <t></t>";
+         }
+
+      %>
+
 		<!-- Three -->
 			<section id="three" class="wrapper">
 				<div class="inner">
 					<header class="align-center">
-						<h2>Nunc Dignissim</h2>
+						<h2><%=reqDisplay%></h2>
 						<p>Aliquam erat volutpat nam dui </p>
 					</header>
 					 <P>
@@ -42,7 +54,7 @@ String columnName;
 try {
 	Class.forName("com.mysql.jdbc.Driver");
 	con=(Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/world", "root", "qwerty1234");
-	ps=(PreparedStatement)con.prepareStatement("SELECT * from world.country where 								      region='Middle East'");
+	ps=(PreparedStatement)con.prepareStatement("SELECT * FROM devops.requests");
 	ResultSet rs=ps.executeQuery();
 	ResultSetMetaData rsmd = rs.getMetaData();
 	int fieldsCount = rsmd.getColumnCount();
@@ -52,14 +64,14 @@ try {
 	        for (int i = 1; i <= fieldsCount; i++)
 		{
 			columnName = rsmd.getColumnName(i);
-			out.println("<TH>" + columnName + "</TH>");	
+			out.println("<TH>" + columnName + "</TH>");
 		}
 	}
 	while(rs.next())
 	{
 	        out.println("<TR>");
 		for (int i = 1; i <= fieldsCount; i++) {
-			columnName = rsmd.getColumnName(i);		
+			columnName = rsmd.getColumnName(i);
    	        	int type = rsmd.getColumnType(i);
 			if (type == Types.VARCHAR || type == Types.CHAR) {
 				out.println("<TD>"+rs.getString(columnName)+"</TD>");
@@ -76,11 +88,24 @@ try {
         out.println(e);
 } finally {
         if (ps != null) {
-		ps.close();	
+		ps.close();
 	}
 }
-  
+
 %></p>
+
+<!-- Two -->
+  <section id="two" class="wrapper style1 special">
+    <div class="inner">
+      <header>
+        <p align-center><img src="images/lightgreen.png" alt="Person 1" /></p>
+        <h2>הטרנזקציות שלך נראות משגע</h2>
+        <p>בהצלחה בהעברה לייצור</p>
+      </header>
+
+    </div>
+  </section>
+
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>

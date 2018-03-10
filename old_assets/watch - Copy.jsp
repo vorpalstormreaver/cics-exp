@@ -1,3 +1,8 @@
+<%@page import="java.sql.*"%>
+<%@page import="com.mysql.jdbc.PreparedStatement"%>
+<%@page import="com.mysql.jdbc.Connection"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -29,83 +34,31 @@
 						<h2>Nunc Dignissim</h2>
 						<p>Aliquam erat volutpat nam dui </p>
 					</header>
-					<p>
-
-<%@ page import="java.io.*,java.util.*,java.sql.*"%>
-<%@ page import="javax.servlet.http.*,javax.servlet.*" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql"%>
-<sql:setDataSource var="cics" driver="com.mysql.jdbc.Driver"
-     url="jdbc:mysql://localhost:3306"
-     user="cics"  password="qwerty1234"/>
- 
-<sql:query dataSource="${cics}" var="result">
-select Code,Name from world.country 
-where Region = "Middle East"
-</sql:query>
- 
-<table>
-<tr>
-   <th>Code</th>
-   <th>Name</th>
-</tr>
-<c:forEach var="row" items="${result.rows}">
-<tr>
-   <td><c:out value="${row.code}"/></td>
-   <td><c:out value="${row.name}"/></td>
-</tr>
-</c:forEach>
-</table>
-
-					</p>
-					<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
-					<div class="flex flex-2">
-						<article>
-							<div class="image fit">
-								<img src="images/pic01.jpg" alt="Pic 01" />
-							</div>
-							<header>
-								<h3>Praesent placerat magna</h3>
-							</header>
-							<p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor lorem ipsum.</p>
-							<footer>
-								<a href="#" class="button special">More</a>
-							</footer>
-						</article>
-						<article>
-							<div class="image fit">
-								<img src="images/pic02.jpg" alt="Pic 02" />
-							</div>
-							<header>
-								<h3>Fusce pellentesque tempus</h3>
-							</header>
-							<p>Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, euismod vel, velit. Pellentesque egestas sem. Suspendisse commodo ullamcorper magna non comodo sodales tempus.</p>
-							<footer>
-								<a href="#" class="button special">More</a>
-							</footer>
-						</article>
-					</div>
-				</div>
-			</section>
-
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<div class="flex">
-						<div class="copyright">
-							&copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a>.
-						</div>
-						<ul class="icons">
-							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon fa-linkedin"><span class="label">linkedIn</span></a></li>
-							<li><a href="#" class="icon fa-pinterest-p"><span class="label">Pinterest</span></a></li>
-							<li><a href="#" class="icon fa-vimeo"><span class="label">Vimeo</span></a></li>
-						</ul>
-					</div>
-				</div>
-			</footer>
-
+					 <P>
+     <!--<TABLE BORDER=1 BGCOLOR="C0C0C0"> WIDTH=100 BGCOLOR="white"> -->
+     <TABLE>
+     <TH> <I>Name</I> </TH>
+     <TH> <I>Code</I> </TH>
+<%
+PreparedStatement ps = null;
+Connection con;
+try {
+	Class.forName("com.mysql.jdbc.Driver");
+	con=(Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/world", "root", "qwerty1234");
+	ps=(PreparedStatement)con.prepareStatement("SELECT * from world.country where 								      region='Middle East'");
+	ResultSet rs=ps.executeQuery();
+	while(rs.next())
+	{
+		out.println("<TR> <TD ALIGN=LEFT>"+rs.getString("name")+"</TD>");
+		out.println("<TD ALIGN=LEFT>"+rs.getString("code")+"</TD></TR>");
+	}
+} catch (SQLException e ) {
+        out.println(e);
+    } finally {
+        if (ps != null) { ps.close(); }
+    }
+  
+%></p>
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
