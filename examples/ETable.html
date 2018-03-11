@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)https://codepen.io/ashblue/pen/mCtuA -->
+<html lang="en" class="cookie_used_true js pc js"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+
+
+
+
+  <title>HTML5 Editable Table</title>
+
+    <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@CodePen">
+  <meta name="twitter:title" content="HTML5 Editable Table">
+  <meta name="twitter:description" content="Create and edit an HTML5 table without the use of a library. Uses HTML5&#39;s contenteditable and minimal JavaScript....">
+  <meta name="twitter:image" content="https://s3-us-west-2.amazonaws.com/i.cdpn.io/34533.mCtuA.65ee6e17-6066-4226-b5b4-8b3d788bfd6a.png">
+
+  <meta property="og:image" content="https://codepen.io/ashblue/pen/mCtuA/image/large.png" itemprop="thumbnailUrl">
+  <meta property="og:title" content="HTML5 Editable Table">
+  <meta property="og:url" content="https://codepen.io/ashblue/details/mCtuA">
+  <meta property="og:site_name" content="CodePen">
+  <meta property="og:description" content="Create and edit an HTML5 table without the use of a library. Uses HTML5&#39;s contenteditable and minimal JavaScript....">
+
+  <link rel="alternate" type="application/json+oembed" href="https://codepen.io/api/oembed?url=https://codepen.io/ashblue/pen/mCtuA&amp;format=json" title="HTML5 Editable Table">
+
+
+  <link href="./HTML5 Editable Table_files/css" rel="stylesheet">
+
+  <link rel="stylesheet" media="all" href="./HTML5 Editable Table_files/global-NoMQ-bbbba65ec4acf8cb3c29797195ac56365fed43cb90d1c21e3af05ac4cf59b41a.css">
+  <link rel="stylesheet" media="all" href="./HTML5 Editable Table_files/editor-ec08699b89cb4911aeba70d1f1d5e0374a4d95cce03df3f0cf90fe8f72d5c795.css">
+
+
+  <meta name="description" content="Create and edit an HTML5 table without the use of a library. Uses HTML5&#39;s contenteditable and minimal JavaScript....">
+
+
+
+
+
+<link rel="stylesheet" media="screen" href="./HTML5 Editable Table_files/twilight-2cb75eda672e6bf9b693686a681374f37c6ea158ece367b9833d6254e47dffe8.css" id="cm-theme">
+
+<style id="cm-font-family" class="cm-font-family">
+
+  .CodeMirror,
+  .console-logs .console-line,
+  .console-command-line-input,
+  .console-message,
+  .CodeMirror-hint {
+    font-family: Monaco, MonoSpace;
+  }
+</style>
+
+<style id="cm-font-size">
+  .CodeMirror,
+  .console-logs .console-line,
+  .console-command-line-input,
+  .console-message,
+  .CodeMirror-hint {
+    font-size: 14px;
+  }
+</style>
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico">
+  <link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111">
+
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="XUY+ysWgb+a1eMr2xhiRmwiTKi6S3gw1UGO3Z9hGoFnvoGwRlOrPMKGAqYD2bwViRy9Uog55e7RTOkQWfCQRAQ==">
+
+  <script async="" src="./HTML5 Editable Table_files/analytics.js.download"></script>
+
+</head>
+
+<body class="room-editor editor state-htmlOn-cssOn-jsOn       logged-out unsaved layout-top">
+
+<header class="main-header" id="main-header">
+  <div class="header-chunk pen-title-area">
+
+      <h1 id="pen-title" class="pen-title">
+        <a class="pen-title-link" href="https://codepen.io/ashblue/pen/mCtuA">
+            HTML5 Editable Table
+        </a>
+      </h1></div></header<body>
+
+        <div class="code-wrap">
+          <div class="CodeMirror cm-s-default CodeMirror-wrap CodeMirror-simplescroll"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 170.4px; left: 89.15px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-simplescroll-horizontal" cm-not-content="true" style="display: none;"><div></div></div><div class="CodeMirror-simplescroll-vertical" cm-not-content="true" style="display: block; bottom: 0px;"><div style="height: 64.0137px; top: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 39px; margin-bottom: -16px; border-right-width: 14px; min-height: 1590px; padding-right: 9px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation" style="padding-bottom: 276.2px;"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>47</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors" style=""><div class="CodeMirror-cursor" style="left: 50.15px; top: 166.4px; height: 20.8px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation" style=""><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"container"</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">2</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">h1</span><span class="cm-tag cm-bracket">&gt;</span>HTML5 Editable Table<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">h1</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">3</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>Through the powers of <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">strong</span><span class="cm-tag cm-bracket">&gt;</span>contenteditable<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">strong</span><span class="cm-tag cm-bracket">&gt;</span> and some simple jQuery you can easily create a custom editable table. No need for a robust Java<span class="cm-overlay cm-searching">Scri</span>pt library anymore these days.<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">5</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag emmet-open-tag">ul</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">6</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>An editable table that exports a hash array. Dynamically compiles rows from headers<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span> </span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">7</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span>Simple / powerful features such as add row, remove row, move row up/down.<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">li</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">8</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag emmet-close-tag">ul</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">9</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">10</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">id</span>=<span class="cm-string">"table"</span> <span class="cm-attribute">class</span>=<span class="cm-string">"table-editable"</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">11</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">span</span> <span class="cm-attribute">class</span>=<span class="cm-string">"table-add glyphicon glyphicon-plus"</span><span class="cm-tag cm-bracket">&gt;&lt;/</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">12</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">table</span> <span class="cm-attribute">class</span>=<span class="cm-string">"table"</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">13</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">tr</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">14</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">th</span><span class="cm-tag cm-bracket">&gt;</span>Name<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">th</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">15</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">th</span><span class="cm-tag cm-bracket">&gt;</span>Value<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">th</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">16</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">th</span><span class="cm-tag cm-bracket">&gt;&lt;/</span><span class="cm-tag">th</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">17</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">th</span><span class="cm-tag cm-bracket">&gt;&lt;/</span><span class="cm-tag">th</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 14px; width: 1px; border-bottom: 0px solid transparent; top: 1590px;"></div><div class="CodeMirror-gutters" style="height: 1604px; left: -1.90735e-06px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div><div class="CodeMirror-gutter CodeMirror-foldgutter"></div></div></div></div>
+          <div class="error-bar" id="error-bar-html" style="display: none;">
+            <span class="error-icon" data-type="html">
+              !
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="editor-resizer" title="Drag to resize.
+Double-click to expand."><h2 class="box-title box-title--resizer" id="css-editor-title"><span class="box-title-name">CSS</span></h2></div>
+
+
+      <div id="box-css" class="box box-css scss neither" data-type="css" style="width: 34.375%;">
+
+        <div class="powers">
+          <div class="powers-drag-handle" title="Drag to resize.
+Double-click to expand."></div>
+
+          <div class="editor-actions-left">
+            <button id="settings-pane-css" class="button button-medium mini-button settings-nub" data-type="css" title="Open CSS Settings">
+              <svg class="icon-gear" width="10" height="10">
+                <use xlink:href="#gear"></use>
+              </svg>
+            </button>
+
+            <h2 class="box-title" id="css-editor-title"><span class="box-title-name">CSS</span></h2>
+          </div>
+
+          <div class="editor-actions-right">
+            <button class="button mini-button button-medium editor-dropdown-button editor-dropdown-button-css" data-dropdown="#editor-dropdown-css" aria-haspopup="true" aria-expanded="false">
+  <span class="visually-hidden">
+    CSS Options
+  </span>
+  <svg class="icon-arrow-down-mini" width="10" height="10">
+    <use xlink:href="#arrow-down-mini"></use>
+  </svg>
+</button>
+
+            <ul id="editor-dropdown-css" class="link-list is-dropdown editor-dropdown editor-dropdown-css" data-dropdown-position="css" data-dropdown-type="css">
+
+    <li>
+      <a href="https://codepen.io/ashblue/pen/mCtuA#0" id="css-tidy-code-button" class="tidy-code-button" data-type="css">
+        Tidy CSS
+      </a>
+    </li>
+
+    <li>
+      <a href="https://codepen.io/ashblue/pen/mCtuA#0" class="view-compiled-button" id="css-view-compiled" data-type="css">
+        View Compiled CSS
+      </a>
+    </li>
+
+    <li>
+      <a href="https://codepen.io/ashblue/pen/mCtuA#0" class="analyze" id="analyze-css" data-type="css">
+        Analyze CSS
+      </a>
+    </li>
+
+    <li class="maximize">
+      <a href="https://codepen.io/ashblue/pen/mCtuA#0">
+        Maximize CSS Editor
+      </a>
+    </li>
+
+    <li class="minimize">
+      <a href="https://codepen.io/ashblue/pen/mCtuA#0">
+        Minimize CSS Editor
+      </a>
+    </li>
+
+  </ul>
+          </div>
+
+        </div>
+
+        <div class="code-wrap">
+          <div class="CodeMirror cm-s-default CodeMirror-wrap CodeMirror-simplescroll"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 168.8px; left: 50.6875px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-simplescroll-horizontal" cm-not-content="true" style="display: none;"><div></div></div><div class="CodeMirror-simplescroll-vertical" cm-not-content="true" style="display: block; bottom: 0px;"><div style="height: 92.9213px; top: 0.454661px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1" draggable="false"><div class="CodeMirror-sizer" style="margin-left: 39px; margin-bottom: -16px; border-right-width: 14px; min-height: 1091px; padding-right: 9px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation" style="padding-bottom: 276.2px;"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>39</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors" style=""><div class="CodeMirror-cursor" style="left: 11.6875px; top: 166.4px; height: 20.8px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation" style=""><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-def">@import</span> <span class="cm-string">"compass/css3"</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">3</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-qualifier">.table-editable</span> {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-property">position</span>: <span class="cm-atom">relative</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">5</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">6</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-qualifier">.glyphicon</span> {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">7</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-property">font-size</span>: <span class="cm-number">20px</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">8</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  }</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">9</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">10</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">11</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-qualifier">.table-remove</span> {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">12</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-property">color</span>: <span class="cm-atom">#700</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">13</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-property">cursor</span>: <span class="cm-atom">pointer</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">14</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">15</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  &amp;:<span class="cm-variable-3">hover</span> {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">16</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-property">color</span>: <span class="cm-atom">#f00</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">17</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  }</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">18</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">19</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">20</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-qualifier">.table-up</span>, <span class="cm-qualifier">.table-down</span> {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">21</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-property">color</span>: <span class="cm-atom">#007</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">22</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-property">cursor</span>: <span class="cm-atom">pointer</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">23</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">24</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  &amp;:<span class="cm-variable-3">hover</span> {</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 14px; width: 1px; border-bottom: 0px solid transparent; top: 1091px;"></div><div class="CodeMirror-gutters" style="height: 1105px; left: 0px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div><div class="CodeMirror-gutter CodeMirror-foldgutter"></div></div></div></div>
+          <div class="error-bar" id="error-bar-css" style="display: none;">
+            <span class="error-icon" data-type="css">
+              !
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="editor-resizer" title="Drag to resize.
+Double-click to expand."><h2 class="box-title box-title--resizer" id="js-editor-title"><span class="box-title-name">JS</span></h2></div>
+
+      <div id="box-js" class="box box-js none" data-type="js" style="width: 33.8542%;">
+
+        <div class="powers">
+          <div class="powers-drag-handle" title="Drag to resize.
+Double-click to expand."></div>
+
+          <div class="editor-actions-left">
+            <button id="settings-pane-js" class="button button-medium mini-button settings-nub" data-type="js" title="Open JS Settings">
+              <svg class="icon-gear" width="10" height="10">
+                <use xlink:href="#gear"></use>
+              </svg>
+            </button>
+
+            <h2 class="box-title" id="js-editor-title"><span class="box-title-name">JS</span></h2>
+          </div>
+
+          <div class="editor-actions-right">
+            <button class="button mini-button button-medium editor-dropdown-button editor-dropdown-button-js" data-dropdown="#editor-dropdown-js" aria-haspopup="true" aria-expanded="false">
+  <span class="visually-hidden">
+    JS Options
+  </span>
+  <svg class="icon-arrow-down-mini" width="10" height="10">
+    <use xlink:href="#arrow-down-mini"></use>
+  </svg>
+</button>
+
+            <ul id="editor-dropdown-js" class="link-list is-dropdown editor-dropdown editor-dropdown-js" data-dropdown-position="css" data-dropdown-type="js">
+
+    <li>
+      <a href="https://codepen.io/ashblue/pen/mCtuA#0" id="js-tidy-code-button" class="tidy-code-button" data-type="js">
+        Tidy JS
+      </a>
+    </li>
+
+    <li>
+      <a href="https://codepen.io/ashblue/pen/mCtuA#0" class="view-compiled-button" id="js-view-compiled" data-type="js">
+        View Compiled JS
+      </a>
+    </li>
+
+    <li>
+      <a href="https://codepen.io/ashblue/pen/mCtuA#0" class="analyze" id="analyze-js" data-type="js">
+        Analyze JS
+      </a>
+    </li>
+
+    <li class="maximize">
+      <a href="https://codepen.io/ashblue/pen/mCtuA#0">
+        Maximize JS Editor
+      </a>
+    </li>
+
+    <li class="minimize">
+      <a href="https://codepen.io/ashblue/pen/mCtuA#0">
+        Minimize JS Editor
+      </a>
+    </li>
+
+  </ul>
+          </div>
+
+        </div>
+
+        <div class="code-wrap">
+          <div class="CodeMirror cm-s-default CodeMirror-wrap CodeMirror-simplescroll"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 170.4px; left: 196.6px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-simplescroll-horizontal" cm-not-content="true" style="display: none;"><div></div></div><div class="CodeMirror-simplescroll-vertical" cm-not-content="true" style="display: block; bottom: 0px;"><div style="height: 60.8282px; top: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1" draggable="false"><div class="CodeMirror-sizer" style="margin-left: 39px; margin-bottom: -16px; border-right-width: 14px; min-height: 1674px; padding-right: 9px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation" style="padding-bottom: 276.2px;"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>66</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors" style=""><div class="CodeMirror-cursor" style="left: 157.6px; top: 166.4px; height: 20.8px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation" style=""><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39.0001px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">var</span> <span class="cm-def">$TABLE</span> <span class="cm-operator">=</span> <span class="cm-variable">$</span>(<span class="cm-string">"#table"</span>);</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39.0001px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">var</span> <span class="cm-def">$BTN</span> <span class="cm-operator">=</span> <span class="cm-variable">$</span>(<span class="cm-string">"#export-btn"</span>);</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39.0001px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">var</span> <span class="cm-def">$EXPORT</span> <span class="cm-operator">=</span> <span class="cm-variable">$</span>(<span class="cm-string">"#export"</span>);</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39.0001px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39.0001px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">5</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">$</span>(<span class="cm-string">".table-add"</span>).<span class="cm-property">click</span>(<span class="cm-keyword">function</span>() {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39.0001px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">6</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-keyword">var</span> <span class="cm-def">$clone</span> <span class="cm-operator">=</span> <span class="cm-variable">$TABLE</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39.0001px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">7</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  .<span class="cm-property">find</span>(<span class="cm-string">"tr.hide"</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39.0001px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">8</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  .<span class="cm-property">clone</span>(<span class="cm-atom">true</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39.0001px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">9</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  .<span class="cm-property">removeClass</span>(<span class="cm-string">"hide table-line"</span>);</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39.0001px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">10</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-variable">$TABLE</span>.<span class="cm-property">find</span>(<span class="cm-string">"table"</span>).<span class="cm-property">append</span>(<span class="cm-variable-2">$clone</span>);</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39.0001px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">11</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">});</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39.0001px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">12</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39.0001px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">13</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">$</span>(<span class="cm-string">".table-remove"</span>).<span class="cm-property">click</span>(<span class="cm-keyword">function</span>() {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39.0001px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">14</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-variable">$</span>(<span class="cm-keyword">this</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39.0001px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">15</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  .<span class="cm-property">parents</span>(<span class="cm-string">"tr"</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39.0001px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">16</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  .<span class="cm-property">detach</span>();</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39.0001px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">17</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">});</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39.0001px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">18</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39.0001px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">19</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 10px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">$</span>(<span class="cm-string">".table-up"</span>).<span class="cm-property">click</span>(<span class="cm-keyword">function</span>() {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39.0001px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">20</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-keyword">var</span> <span class="cm-def">$row</span> <span class="cm-operator">=</span> <span class="cm-variable">$</span>(<span class="cm-keyword">this</span>).<span class="cm-property">parents</span>(<span class="cm-string">"tr"</span>);</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39.0001px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">21</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-keyword">if</span> (<span class="cm-variable-2">$row</span>.<span class="cm-property">index</span>() <span class="cm-operator">===</span> <span class="cm-number">1</span>) <span class="cm-keyword">return</span>; <span class="cm-comment">// Don't go above the header</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39.0001px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">22</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-variable-2">$row</span>.<span class="cm-property">prev</span>().<span class="cm-property">before</span>(<span class="cm-variable-2">$row</span>.<span class="cm-property">get</span>(<span class="cm-number">0</span>));</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39.0001px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">23</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">});</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -39.0001px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">24</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 14px; width: 1px; border-bottom: 0px solid transparent; top: 1674px;"></div><div class="CodeMirror-gutters" style="height: 1688px; left: -6.10352e-05px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div><div class="CodeMirror-gutter CodeMirror-foldgutter"></div></div></div></div>
+          <div class="error-bar" id="error-bar-js" style="display: none;">
+            <span class="error-icon" data-type="js">
+              !
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div id="resizer" class="resizer"><span></span><div id="width-readout" class="width-readout">1536px</div></div>
+
+    <div class="output-container">
+      <div class="output-sizer">
+
+        <div id="result_div" class="result"><iframe id="iFrameKey-f6bf5ee0-2d5e-4613-39f6-cc13d17bddb5" src="./HTML5 Editable Table_files/index.html" name="CodePen" allowfullscreen="true" sandbox="allow-same-origin allow-scripts allow-pointer-lock allow-popups allow-modals allow-forms" allow="geolocation; microphone; camera; midi; vr" allowtransparency="true" class="result-iframe"></iframe>
+
+
+          <div id="asset-bin-goes-here"></div>
+
+            <section id="drawer" class="drawer">
+
+            </section>
+
+
+
+          <div id="editor-drag-cover" class="drag-cover"></div>
+
+        </div>
+
+        <div id="box-console" class="box box-console">
+
+  <div class="editor-resizer editor-resizer-console" title="Drag to resize. Double-click to expand."></div>
+
+  <div class="powers">
+    <div class="powers-drag-handle" title="Drag to resize. Double-click to expand."></div>
+    <div class="editor-actions-left">
+      <h2 class="box-title"><span class="box-title-name">Console</span></h2>
+      <div class="editor-actions-right">
+        <button class="button button-medium mini-button console-clear-button" title="Clear">
+          Clear
+        </button>
+        <button class="button button-medium mini-button close-editor-button" data-type="console" title="Close">
+          <svg class="icon-x">
+            <use xlink:href="#x"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="console-wrap">
+    <div class="console-entries short-no-scroll"></div>
+    <div class="console-command-line">
+      <span class="console-arrow forwards"></span>
+      <textarea class="console-command-line-input auto-expand" rows="1" data-min-rows="1"></textarea>
+    </div>
+  </div>
+
+</div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+  <footer class="site-footer editor-footer">
+
+  <div class="footer-left">
+
+
+    <button class="button button-dark mini-button console-toggle-button">
+  Console
+</button>
+
+    <button class="button button-dark mini-button" id="assets-link">
+      Assets
+    </button>
+
+      <button class="button button-dark mini-button" id="view-details-button">
+        Comments
+      </button>
+
+    <button class="button button-dark mini-button keyboard-commands-button">
+      <span>⌘</span>
+    </button>
+
+      <span id="bsa-footer" class="bsa-footer"></span>
+
+  </div>
+
+  <div class="footer-right">
+
+
+
+
+
+
+
+      <button class="button button-dark mini-button sharing-button" data-dropdown="#sharing-panel">
+        Share
+      </button>
+        <section id="sharing-panel" class="sharing-panel is-dropdown">
+
+  <ul id="share-buttons" class="share-buttons share-section">
+
+    <li>
+      <a target="_blank" rel="noopener" class="button" href="https://twitter.com/intent/tweet?text=HTML5%20Editable%20Table&amp;url=https://codepen.io/ashblue/pen/mCtuA&amp;via=CodePen">
+        <svg class="icon-twitter">
+          <use xlink:href="#twitter"></use>
+        </svg>
+        Share on Twitter
+      </a>
+    </li>
+
+    <li>
+      <a target="_blank" rel="noopener" class="button" href="https://www.facebook.com/sharer/sharer.php?u=https://codepen.io/ashblue/pen/mCtuA">
+        <svg class="icon-facebook">
+          <use xlink:href="#facebook"></use>
+        </svg>
+        Share on Facebook
+      </a>
+    </li>
+
+    <li>
+      <a target="_blank" rel="noopener" class="button" href="https://plus.google.com/share?url=https://codepen.io/ashblue/pen/mCtuA">
+        <svg class="icon-google-plus">
+          <use xlink:href="#google-plus"></use>
+        </svg>
+        Share on Google+
+      </a>
+    </li>
+
+  </ul>
+
+
+
+</section>
+
+
+      <button class="button button-dark mini-button export-button" data-dropdown="#export-panel">
+        Export
+      </button>
+
+        <button class="button button-dark mini-button embed-builder-button">
+          Embed
+        </button>
+
+
+      <section id="export-panel" class="export-panel is-dropdown">
+        <div class="share-actions share-section">
+
+
+  <a id="share-zip" href="https://codepen.io/ashblue/share/zip/mCtuA/" class="button">
+    <svg class="icon-zip-badge" width="16" height="16">
+      <use xlink:href="#zip-badge"></use>
+    </svg>
+    Export .zip
+  </a>
+
+    <a href="https://codepen.io/ashblue/pen/mCtuA#0" class="button embed-builder-button">
+      <svg class="icon-embed-badge" width="16" height="16">
+        <use xlink:href="#embed-badge"></use>
+      </svg>
+      Embed Pen
+    </a>
+
+</div>
+      </section>
+
+
+  </div>
+
+</footer>
+
+
+<div id="keycommands" class="modal modal-neutral">
+
+  <section class="editor-commands" style="padding-right: 10px;">
+
+    <h2>Editor Commands</h2>
+
+    <div class="key-group">
+      <kbr class="command-no-mod">
+        <span class="pc_only">Ctrl</span>
+        <span class="mac_only">Ctrl</span>
+        Space
+      </kbr>
+      Autocomplete (if available)
+    </div>
+    <div class="key-group">
+      <kbr class="command">F</kbr>
+      Find
+    </div>
+    <div class="key-group">
+      <kbr class="command">G</kbr>
+      Find Next
+    </div>
+    <div class="key-group">
+      <kbr class="command">⇧G</kbr>
+      Find Previous
+    </div>
+    <div class="key-group">
+      <span class="command pc_only">Alt F</span>
+      <span class="command mac_only">Opt F</span>
+      Find &amp; Replace
+    </div>
+    <div class="key-group">
+      <kbr class="command">[</kbr>
+      Indent Code Right
+    </div>
+    <div class="key-group">
+      <kbr class="command">]</kbr>
+      Indent Code Left
+    </div>
+      <div class="key-group">
+        <kbr class="command-no-mod">⇧ Tab</kbr>
+        Auto Indent Code
+      </div>
+    <div class="key-group">
+      <kbr class="command">/</kbr>
+      Line Comment
+    </div>
+    <div class="key-group">
+      <kbr class="command">
+        <span class="pc_only">⇧</span>
+        <span class="mac_only">Opt</span>
+        /
+      </kbr>
+      Block Comment
+    </div>
+
+    <p style="margin: 20px 0 0 0;">Also see: <a href="https://blog.codepen.io/documentation/features/tab-triggers/" target="_blank" rel="noopener">Tab Triggers</a></p>
+
+  </section>
+
+
+  <section class="editor-commands">
+
+    <h2>HTML Specific</h2>
+
+    <div class="key-group">
+      <kbr class="command">⇧A</kbr>
+      Wrap With...
+    </div>
+
+    <h2>Misc</h2>
+
+    <div class="key-group">
+      <kbr class="command">⇧5</kbr>
+      Re-run Preview
+    </div>
+
+    <div class="key-group">
+      <kbr class="command">⇧8</kbr>
+      Clear All Analyze Errors
+    </div>
+
+    <div class="key-group">
+      <kbr class="command">⇧9</kbr>
+      Open This Dialog
+    </div>
+
+    <h2>Pen Actions</h2>
+
+    <div class="key-group">
+      <kbr class="command">P</kbr>
+      Create New Pen
+    </div>
+
+    <div class="key-group">
+      <kbr class="command">S</kbr>
+      Save
+    </div>
+
+    <div class="key-group">
+      <kbr class="command">I</kbr>
+      Info Panel (if owned)
+    </div>
+
+  </section>
+
+</div>
+
+
+
+
+
+
+
+  <div id="popup-overlay" class="overlay popup-overlay" style="display: none;"></div>
+  <div id="modal-overlay" class="overlay modal-overlay" style="display: none;"></div>
+
+  <noscript>
+
+  &lt;input type="checkbox" class="modal-closing-trick" id="modal-closing-trick"&gt;
+
+  &lt;div class="overlay noscript-overlay" style="display: block;"&gt;&lt;/div&gt;
+
+  &lt;div class="modal modal-message group modal-warning"&gt;
+
+    &lt;div class="modal-title"&gt;CodePen requires JavaScript to render the code and preview areas in this view.&lt;/div&gt;
+
+    &lt;p&gt;Trying &lt;a href="https://codepen.io/ashblue/debug/mCtuA"&gt;viewing this Pen in Debug Mode&lt;/a&gt;, which is the preview area without any iframe and does not require JavaScript. Although what the preview is of might!&lt;/p&gt;
+
+    &lt;p&gt;Need to know how to enable JavaScript? &lt;a href="http://enable-javascript.com/" target="_blank" rel="noopener"&gt;Go here.&lt;/a&gt;&lt;/p&gt;
+
+    &lt;label class="button button-medium" for="modal-closing-trick"&gt;Close this, use anyway.&lt;/label&gt;
+
+  &lt;/div&gt;
+
+</noscript>
+
+
+  <input type="hidden" id="init-data" value="{&quot;__mobile&quot;:false,&quot;__cookieUsed&quot;:true,&quot;__turnOffJS&quot;:false,&quot;__CPDATA&quot;:{&quot;domain&quot;:&quot;https://codepen.io&quot;,&quot;domain_iframe&quot;:&quot;https://s.codepen.io&quot;,&quot;host&quot;:&quot;codepen.io&quot;,&quot;asset_host&quot;:&quot;static.codepen.io&quot;,&quot;embed_asset_host&quot;:&quot;static.codepen.io&quot;,&quot;host_secure_subdomain&quot;:&quot;s.&quot;,&quot;iframe_sandbox&quot;:&quot;allow-same-origin allow-scripts allow-pointer-lock allow-popups allow-modals allow-forms&quot;,&quot;iframe_allow&quot;:&quot;geolocation; microphone; camera; midi; vr&quot;},&quot;__env&quot;:&quot;production&quot;,&quot;__browserName&quot;:&quot;Chrome&quot;,&quot;__remote_addr&quot;:&quot;213.57.155.13&quot;,&quot;__user&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Captain Anonymous&quot;,&quot;username&quot;:&quot;anon&quot;,&quot;base_url&quot;:&quot;/anon/&quot;,&quot;current_team_id&quot;:0,&quot;paid&quot;:false,&quot;tier&quot;:0,&quot;session_hash&quot;:&quot;284ab6ef1c624f84f905357efcd4c96a&quot;},&quot;__c&quot;:false,&quot;__pageType&quot;:&quot;pen&quot;,&quot;__jwt&quot;:&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkYXRhIjp7InVzZXJfaWQiOjEsInVzZXJuYW1lIjoiYW5vbiJ9LCJleHAiOjE1MjA3MTgzMzR9.nprRow7ymFwZV2eFID1v1hNn0ElEJtZ8L5AWH3sHvmc&quot;,&quot;__preprocessors_url&quot;:&quot;https://processors.codepen.io/production-router&quot;,&quot;__layoutType&quot;:null,&quot;__rtData&quot;:&quot;{\&quot;maxMembers\&quot;:1,\&quot;roomID\&quot;:\&quot;mCtuA/live\&quot;,\&quot;roomType\&quot;:\&quot;live\&quot;,\&quot;updatedAt\&quot;:1399613896,\&quot;user\&quot;:{\&quot;id\&quot;:\&quot;2ae66f90b7788ab8950e8f81b829c947\&quot;,\&quot;name\&quot;:\&quot;Captain Anonymous\&quot;,\&quot;username\&quot;:\&quot;anon\&quot;,\&quot;role\&quot;:\&quot;editor\&quot;}}&quot;,&quot;__firebaseData&quot;:&quot;{\&quot;apiKey\&quot;:\&quot;AIzaSyDeziUXEbE4vj4z5XB37jD1Xl9NwZZYKSo\&quot;,\&quot;authDomain\&quot;:\&quot;realtime-production-live.firebaseapp.com\&quot;,\&quot;connectToFirebase\&quot;:false,\&quot;databaseURL\&quot;:\&quot;https://realtime-production-live.firebaseio.com\&quot;,\&quot;token\&quot;:\&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJodHRwczovL2lkZW50aXR5dG9vbGtpdC5nb29nbGVhcGlzLmNvbS9nb29nbGUuaWRlbnRpdHkuaWRlbnRpdHl0b29sa2l0LnYxLklkZW50aXR5VG9vbGtpdCIsImNsYWltcyI6eyJwcmVtaXVtX2FjY291bnQiOnRydWUsInJvb21faWQiOiJtQ3R1QS9saXZlIn0sImV4cCI6MTUyMDYzNTUzNCwiaWF0IjoxNTIwNjMxOTM0LCJpc3MiOiJmaXJlYmFzZS1hZG1pbnNkay1kMjk1OUByZWFsdGltZS1wcm9kdWN0aW9uLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwic3ViIjoiZmlyZWJhc2UtYWRtaW5zZGstZDI5NTlAcmVhbHRpbWUtcHJvZHVjdGlvbi5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbSIsInVpZCI6IjJhZTY2ZjkwYjc3ODhhYjg5NTBlOGY4MWI4MjljOTQ3In0.GvHB7d77Y2v0ptQ8srwtJMwTABmnlVKwT-Gy4C9-YioauH-Q-tdYNJYdaDepnmuUwwQzDdlbsL16_L_h9nPpF11utoGUZwAr7EY9LMLn1_ObTdGxy6Pz7CiaG0uMldBaRzBLPQn9KhIzVPoRULflTPYdbouMUiWV99VsnjNzourJ5-TNG1vKaSmHHV3ItYIgIUxGoNI-xOh33pvbfOyhwaud2qT1Wu27XbeU0-zbXYqbKgAVDjnT-w8t5MoazvYMC-6uOJ2yeWY1mT5lRXituNu6J3G2t5qqX2iN6LztMLizbPnAmUAizBaVRE8IwgeFBSyei9WBTaKDhPbXyFb-Nw\&quot;,\&quot;uid\&quot;:\&quot;2ae66f90b7788ab8950e8f81b829c947\&quot;}&quot;,&quot;__item&quot;:&quot;{\&quot;resources\&quot;:[{\&quot;url\&quot;:\&quot;//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css\&quot;,\&quot;order\&quot;:0,\&quot;resource_type\&quot;:\&quot;css\&quot;,\&quot;action\&quot;:\&quot;include_css_url\&quot;,\&quot;content\&quot;:\&quot;\&quot;,\&quot;original_content\&quot;:\&quot;\&quot;,\&quot;text_to_replace\&quot;:null},{\&quot;url\&quot;:\&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js\&quot;,\&quot;order\&quot;:0,\&quot;resource_type\&quot;:\&quot;js\&quot;,\&quot;action\&quot;:\&quot;include_js_url\&quot;,\&quot;content\&quot;:\&quot;\&quot;,\&quot;original_content\&quot;:\&quot;\&quot;,\&quot;text_to_replace\&quot;:null},{\&quot;url\&quot;:\&quot;//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js\&quot;,\&quot;order\&quot;:1,\&quot;resource_type\&quot;:\&quot;js\&quot;,\&quot;action\&quot;:\&quot;include_js_url\&quot;,\&quot;content\&quot;:\&quot;\&quot;,\&quot;original_content\&quot;:\&quot;\&quot;,\&quot;text_to_replace\&quot;:null},{\&quot;url\&quot;:\&quot;https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js\&quot;,\&quot;order\&quot;:2,\&quot;resource_type\&quot;:\&quot;js\&quot;,\&quot;action\&quot;:\&quot;include_js_url\&quot;,\&quot;content\&quot;:\&quot;\&quot;,\&quot;original_content\&quot;:\&quot;\&quot;,\&quot;text_to_replace\&quot;:null},{\&quot;url\&quot;:\&quot;//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore.js\&quot;,\&quot;order\&quot;:3,\&quot;resource_type\&quot;:\&quot;js\&quot;,\&quot;action\&quot;:\&quot;include_js_url\&quot;,\&quot;content\&quot;:\&quot;\&quot;,\&quot;original_content\&quot;:\&quot;\&quot;,\&quot;text_to_replace\&quot;:null},{\&quot;url\&quot;:\&quot;//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css\&quot;,\&quot;order\&quot;:1,\&quot;resource_type\&quot;:\&quot;css\&quot;,\&quot;action\&quot;:\&quot;include_css_url\&quot;,\&quot;content\&quot;:\&quot;\&quot;,\&quot;original_content\&quot;:\&quot;\&quot;,\&quot;text_to_replace\&quot;:null}],\&quot;tags\&quot;:[\&quot;html5\&quot;,\&quot;contenteditable\&quot;,\&quot;table\&quot;,\&quot;editor\&quot;],\&quot;editor_settings\&quot;:{\&quot;theme\&quot;:\&quot;twilight\&quot;,\&quot;html_pre_processor\&quot;:\&quot;none\&quot;,\&quot;css_pre_processor\&quot;:\&quot;none\&quot;,\&quot;css_starter\&quot;:\&quot;neither\&quot;,\&quot;css_prefix\&quot;:\&quot;neither\&quot;,\&quot;js_pre_processor\&quot;:\&quot;none\&quot;,\&quot;font_type\&quot;:\&quot;monaco\&quot;,\&quot;font_size\&quot;:\&quot;14\&quot;,\&quot;key_bindings\&quot;:\&quot;normal\&quot;,\&quot;indent_with\&quot;:\&quot;spaces\&quot;,\&quot;tab_size\&quot;:2,\&quot;auto_run\&quot;:true,\&quot;line_numbers\&quot;:true,\&quot;line_wrapping\&quot;:true,\&quot;code_folding\&quot;:true,\&quot;match_brackets\&quot;:true,\&quot;autocomplete\&quot;:false,\&quot;emmet_active\&quot;:true,\&quot;snippets\&quot;:{\&quot;markupSnippets\&quot;:{},\&quot;stylesheetSnippets\&quot;:{}}},\&quot;custom_screenshot\&quot;:null,\&quot;updated_at_timestamp\&quot;:1399613896,\&quot;id\&quot;:1516603,\&quot;user_id\&quot;:34533,\&quot;html\&quot;:\&quot;&lt;div class=\\\&quot;container\\\&quot;&gt;\\n  &lt;h1&gt;HTML5 Editable Table&lt;/h1&gt;\\n  &lt;p&gt;Through the powers of &lt;strong&gt;contenteditable&lt;/strong&gt; and some simple jQuery you can easily create a custom editable table. No need for a robust JavaScript library anymore these days.&lt;/p&gt;\\n  \\n  &lt;ul&gt;\\n    &lt;li&gt;An editable table that exports a hash array. Dynamically compiles rows from headers&lt;/li&gt; \\n    &lt;li&gt;Simple / powerful features such as add row, remove row, move row up/down.&lt;/li&gt;\\n  &lt;/ul&gt;\\n  \\n  &lt;div id=\\\&quot;table\\\&quot; class=\\\&quot;table-editable\\\&quot;&gt;\\n    &lt;span class=\\\&quot;table-add glyphicon glyphicon-plus\\\&quot;&gt;&lt;/span&gt;\\n    &lt;table class=\\\&quot;table\\\&quot;&gt;\\n      &lt;tr&gt;\\n        &lt;th&gt;Name&lt;/th&gt;\\n        &lt;th&gt;Value&lt;/th&gt;\\n        &lt;th&gt;&lt;/th&gt;\\n        &lt;th&gt;&lt;/th&gt;\\n      &lt;/tr&gt;\\n      &lt;tr&gt;\\n        &lt;td contenteditable=\\\&quot;true\\\&quot;&gt;Stir Fry&lt;/td&gt;\\n        &lt;td contenteditable=\\\&quot;true\\\&quot;&gt;stir-fry&lt;/td&gt;\\n        &lt;td&gt;\\n          &lt;span class=\\\&quot;table-remove glyphicon glyphicon-remove\\\&quot;&gt;&lt;/span&gt;\\n        &lt;/td&gt;\\n        &lt;td&gt;\\n          &lt;span class=\\\&quot;table-up glyphicon glyphicon-arrow-up\\\&quot;&gt;&lt;/span&gt;\\n          &lt;span class=\\\&quot;table-down glyphicon glyphicon-arrow-down\\\&quot;&gt;&lt;/span&gt;\\n        &lt;/td&gt;\\n      &lt;/tr&gt;\\n      &lt;!-- This is our clonable table line --&gt;\\n      &lt;tr class=\\\&quot;hide\\\&quot;&gt;\\n        &lt;td contenteditable=\\\&quot;true\\\&quot;&gt;Untitled&lt;/td&gt;\\n        &lt;td contenteditable=\\\&quot;true\\\&quot;&gt;undefined&lt;/td&gt;\\n        &lt;td&gt;\\n          &lt;span class=\\\&quot;table-remove glyphicon glyphicon-remove\\\&quot;&gt;&lt;/span&gt;\\n        &lt;/td&gt;\\n        &lt;td&gt;\\n          &lt;span class=\\\&quot;table-up glyphicon glyphicon-arrow-up\\\&quot;&gt;&lt;/span&gt;\\n          &lt;span class=\\\&quot;table-down glyphicon glyphicon-arrow-down\\\&quot;&gt;&lt;/span&gt;\\n        &lt;/td&gt;\\n      &lt;/tr&gt;\\n    &lt;/table&gt;\\n  &lt;/div&gt;\\n  \\n  &lt;button id=\\\&quot;export-btn\\\&quot; class=\\\&quot;btn btn-primary\\\&quot;&gt;Export Data&lt;/button&gt;\\n  &lt;p id=\\\&quot;export\\\&quot;&gt;&lt;/p&gt;\\n&lt;/div&gt;\&quot;,\&quot;css\&quot;:\&quot;@import \\\&quot;compass/css3\\\&quot;;\\n\\n.table-editable {\\n  position: relative;\\n  \\n  .glyphicon {\\n    font-size: 20px;\\n  }\\n}\\n\\n.table-remove {\\n  color: #700;\\n  cursor: pointer;\\n  \\n  &amp;:hover {\\n    color: #f00;\\n  }\\n}\\n\\n.table-up, .table-down {\\n  color: #007;\\n  cursor: pointer;\\n  \\n  &amp;:hover {\\n    color: #00f;\\n  }\\n}\\n\\n.table-add {\\n  color: #070;\\n  cursor: pointer;\\n  position: absolute;\\n  top: 8px;\\n  right: 0;\\n  \\n  &amp;:hover {\\n    color: #0b0;\\n  }\\n}\&quot;,\&quot;parent\&quot;:0,\&quot;js\&quot;:\&quot;var $TABLE = $(&#39;#table&#39;);\\nvar $BTN = $(&#39;#export-btn&#39;);\\nvar $EXPORT = $(&#39;#export&#39;);\\n\\n$(&#39;.table-add&#39;).click(function () {\\n  var $clone = $TABLE.find(&#39;tr.hide&#39;).clone(true).removeClass(&#39;hide table-line&#39;);\\n  $TABLE.find(&#39;table&#39;).append($clone);\\n});\\n\\n$(&#39;.table-remove&#39;).click(function () {\\n  $(this).parents(&#39;tr&#39;).detach();\\n});\\n\\n$(&#39;.table-up&#39;).click(function () {\\n  var $row = $(this).parents(&#39;tr&#39;);\\n  if ($row.index() === 1) return; // Don&#39;t go above the header\\n  $row.prev().before($row.get(0));\\n});\\n\\n$(&#39;.table-down&#39;).click(function () {\\n  var $row = $(this).parents(&#39;tr&#39;);\\n  $row.next().after($row.get(0));\\n});\\n\\n// A few jQuery helpers for exporting only\\njQuery.fn.pop = [].pop;\\njQuery.fn.shift = [].shift;\\n\\n$BTN.click(function () {\\n  var $rows = $TABLE.find(&#39;tr:not(:hidden)&#39;);\\n  var headers = [];\\n  var data = [];\\n  \\n  // Get the headers (add special header logic here)\\n  $($rows.shift()).find(&#39;th:not(:empty)&#39;).each(function () {\\n    headers.push($(this).text().toLowerCase());\\n  });\\n  \\n  // Turn all existing rows into a loopable array\\n  $rows.each(function () {\\n    var $td = $(this).find(&#39;td&#39;);\\n    var h = {};\\n    \\n    // Use the headers from earlier to name our hash keys\\n    headers.forEach(function (header, i) {\\n      h[header] = $td.eq(i).text();   \\n    });\\n    \\n    data.push(h);\\n  });\\n  \\n  // Output the result\\n  $EXPORT.text(JSON.stringify(data));\\n});\&quot;,\&quot;html_pre_processor\&quot;:\&quot;none\&quot;,\&quot;css_pre_processor\&quot;:\&quot;scss\&quot;,\&quot;js_pre_processor\&quot;:\&quot;none\&quot;,\&quot;html_classes\&quot;:\&quot;\&quot;,\&quot;css_starter\&quot;:\&quot;neither\&quot;,\&quot;css_prefix_free\&quot;:null,\&quot;css_external\&quot;:\&quot;//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css\&quot;,\&quot;js_library\&quot;:\&quot;jquery_and_jqueryui\&quot;,\&quot;js_modernizr\&quot;:false,\&quot;js_external\&quot;:\&quot;http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js;//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore.js\&quot;,\&quot;created_at\&quot;:\&quot;2014-05-09T04:05:42.000Z\&quot;,\&quot;updated_at\&quot;:\&quot;2014-05-09T05:38:16.000Z\&quot;,\&quot;session_hash\&quot;:\&quot;14a9afcdb90c7359e6d9a143c8a6a734\&quot;,\&quot;title\&quot;:\&quot;HTML5 Editable Table\&quot;,\&quot;description\&quot;:\&quot;Create and edit an HTML5 table without the use of a library. Uses HTML5&#39;s contenteditable and minimal JavaScript.\&quot;,\&quot;slug_hash\&quot;:\&quot;mCtuA\&quot;,\&quot;head\&quot;:\&quot;\&quot;,\&quot;private\&quot;:false,\&quot;has_animation\&quot;:false,\&quot;css_pre_processor_lib\&quot;:\&quot;compass\&quot;,\&quot;checksum\&quot;:1711907252,\&quot;screenshot_uuid\&quot;:\&quot;65ee6e17-6066-4226-b5b4-8b3d788bfd6a\&quot;,\&quot;team_id\&quot;:0,\&quot;css_prefix\&quot;:\&quot;neither\&quot;,\&quot;template\&quot;:false,\&quot;js_module\&quot;:null}&quot;,&quot;__itemType&quot;:&quot;pen&quot;,&quot;__profiled&quot;:{&quot;id&quot;:34533,&quot;name&quot;:&quot;Ash Blue&quot;,&quot;username&quot;:&quot;ashblue&quot;,&quot;type&quot;:&quot;user&quot;,&quot;is_team&quot;:false,&quot;base_url&quot;:&quot;/ashblue&quot;},&quot;__preprocessors&quot;:{&quot;html&quot;:{&quot;syntaxes&quot;:[&quot;none&quot;,&quot;html&quot;,&quot;markdown&quot;,&quot;slim&quot;,&quot;haml&quot;,&quot;pug&quot;],&quot;default&quot;:&quot;none&quot;,&quot;preprocessors&quot;:[&quot;markdown&quot;,&quot;slim&quot;,&quot;haml&quot;,&quot;pug&quot;],&quot;pretty_syntaxes&quot;:{&quot;none&quot;:&quot;None&quot;,&quot;haml&quot;:&quot;Haml&quot;,&quot;markdown&quot;:&quot;Markdown&quot;,&quot;slim&quot;:&quot;Slim&quot;,&quot;pug&quot;:&quot;Pug&quot;}},&quot;css&quot;:{&quot;syntaxes&quot;:[&quot;none&quot;,&quot;css&quot;,&quot;sass&quot;,&quot;scss&quot;,&quot;less&quot;,&quot;stylus&quot;,&quot;postcss&quot;],&quot;default&quot;:&quot;none&quot;,&quot;preprocessors&quot;:[&quot;sass&quot;,&quot;scss&quot;,&quot;less&quot;,&quot;stylus&quot;,&quot;postcss&quot;],&quot;pretty_syntaxes&quot;:{&quot;none&quot;:&quot;None&quot;,&quot;less&quot;:&quot;LESS&quot;,&quot;scss&quot;:&quot;SCSS&quot;,&quot;sass&quot;:&quot;Sass&quot;,&quot;stylus&quot;:&quot;Stylus&quot;,&quot;postcss&quot;:&quot;PostCSS&quot;},&quot;prefixes&quot;:[&quot;autoprefixer&quot;,&quot;prefixfree&quot;,&quot;neither&quot;],&quot;default_prefix&quot;:&quot;neither&quot;,&quot;exclude_emmet_syntaxes&quot;:[&quot;none&quot;,&quot;postcss&quot;],&quot;bases&quot;:[&quot;normalize&quot;,&quot;reset&quot;,&quot;neither&quot;],&quot;default_base&quot;:&quot;neither&quot;},&quot;js&quot;:{&quot;syntaxes&quot;:[&quot;none&quot;,&quot;js&quot;,&quot;coffee&quot;,&quot;coffeescript&quot;,&quot;livescript&quot;,&quot;typescript&quot;,&quot;babel&quot;],&quot;default&quot;:&quot;none&quot;,&quot;preprocessors&quot;:[&quot;coffeescript&quot;,&quot;livescript&quot;,&quot;typescript&quot;,&quot;babel&quot;],&quot;pretty_syntaxes&quot;:{&quot;none&quot;:&quot;None&quot;,&quot;coffeescript&quot;:&quot;CoffeeScript&quot;,&quot;livescript&quot;:&quot;LiveScript&quot;,&quot;typescript&quot;:&quot;TypeScript&quot;,&quot;babel&quot;:&quot;Babel&quot;},&quot;words_we_cannot_instrument&quot;:[&quot;requestAnimationFrame&quot;,&quot;setInterval&quot;]}},&quot;__debug_redirect&quot;:&quot;https://codepen.io/ashblue/debug/mCtuA&quot;,&quot;__embed_modal_script&quot;:&quot;//static.codepen.io/assets/embed/modal/embed_modal-680127efe5d262d742773752f7d40e3a106d94254204e4b6795c9a059d3adece.js&quot;,&quot;__path_to_details_comment_js&quot;:&quot;//static.codepen.io/assets/details/comment-eee26241799ac3a643839a038bf5fb47018673fd1a26e2621aa81b48e97f4e3f.js&quot;,&quot;__syntax_highlighting_script&quot;:&quot;//static.codepen.io/assets/comments/syntax_highlight_comments-128fabdd61bd6be117fc3bd5a3aed2472f6ad83018bd37d81241d8c0733cdd4f.js&quot;,&quot;__run_mode_script&quot;:&quot;//static.codepen.io/assets/libs/codemirror/addon/runmode/runmode-3ca3a5cb2e3a3adb25405c1ba1426654e86f0506109ee26b4f491da8cb1f379f.js&quot;,&quot;__standalone_run_mode_script&quot;:&quot;//static.codepen.io/assets/libs/codemirror/addon/runmode/runmode-standalone-8f9e5e5f296d6fc7697f8f36aad2864386e55bafb18adb7c55ef84e9d338d674.js&quot;,&quot;__favicon_mask_icon&quot;:&quot;//static.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg&quot;,&quot;__favicon_shortcut_icon&quot;:&quot;//static.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico&quot;,&quot;__path_to_console_runner_js&quot;:&quot;//static.codepen.io/assets/editor/live/console_runner-ce3034e6bde3912cc25f83cccb7caa2b0f976196f2f2d52303a462c826d54a73.js&quot;,&quot;__path_to_events_runner_js&quot;:&quot;//static.codepen.io/assets/editor/live/events_runner-73716630c22bbc8cff4bd0f07b135f00a0bdc5d14629260c3ec49e5606f98fdd.js&quot;,&quot;__path_to_live_reloader_js&quot;:&quot;//static.codepen.io/assets/editor/live/css_live_reload_init-890dc39bb89183d4642d58b1ae5376a0193342f9aed88ea04330dc14c8d52f55.js&quot;,&quot;__path_to_check_js&quot;:&quot;//static.codepen.io/assets/editor/live/check-c263eb37bf3a3d49b8311c096168b478f5750c61a1166ea2cc660498870d671f.js&quot;,&quot;__path_to_stop_execution_on_timeout&quot;:&quot;//static.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js&quot;,&quot;__pen_normalize_css_url&quot;:&quot;https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css&quot;,&quot;__pen_prefix_free_url&quot;:&quot;https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js&quot;,&quot;__pen_reset_css_url&quot;:&quot;https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css&quot;,&quot;__cdn_css_url&quot;:&quot;//static.codepen.io/assets/editor/other/cdn/cdncss_data-b2a6b09b819f5d5cad330bde53c28db816c78598cbec7c82693642c0f8198d81.json&quot;,&quot;__cdn_js_url&quot;:&quot;//static.codepen.io/assets/editor/other/cdn/cdnjs_data-1ba370c14f6d31ca1535a87b2e3e151cf4b60d08485aba18ef86b137051f0175.json&quot;,&quot;__theme_url_twilight&quot;:&quot;//static.codepen.io/assets/editor/themes/twilight-2cb75eda672e6bf9b693686a681374f37c6ea158ece367b9833d6254e47dffe8.css&quot;,&quot;__theme_url_solarized_dark&quot;:&quot;//static.codepen.io/assets/editor/themes/solarized-dark-637a1d47e4f03272e3c9a5d5c2f1c6f56a0d836e9fb845ecc97a3f815408faa1.css&quot;,&quot;__theme_url_tomorrow_night&quot;:&quot;//static.codepen.io/assets/editor/themes/tomorrow-night-272c989e172e8017a56f73346bbb52b182cfd89dc322c27fd50f7f81aa3fb703.css&quot;,&quot;__theme_url_oceanic_dark&quot;:&quot;//static.codepen.io/assets/editor/themes/oceanic-dark-7398c552385632d26db09bd75df7b3a16bf22554a2da9012d440ffb8522102c6.css&quot;,&quot;__theme_url_panda&quot;:&quot;//static.codepen.io/assets/editor/themes/panda-45bff6de1d41e063eca87076fb826708f535f07431dca1e8a6c0c1fe50cb6ed9.css&quot;,&quot;__theme_url_duotone_dark&quot;:&quot;//static.codepen.io/assets/editor/themes/duotone-dark-e2a062e07aaf2106aec618e19a242c9dbe1cae5c62c460ff0b536da38df82968.css&quot;,&quot;__theme_url_classic&quot;:&quot;//static.codepen.io/assets/editor/themes/classic-4245b6d32982964cdaac73a74d02e11c31e8801d698f61e31400aa1a158060ed.css&quot;,&quot;__theme_url_solarized_light&quot;:&quot;//static.codepen.io/assets/editor/themes/solarized-light-1714c5ad85290fd757e271850ba013205e3b047851cc8b45e4abf7d12c811ead.css&quot;,&quot;__theme_url_xq_light&quot;:&quot;//static.codepen.io/assets/editor/themes/xq-light-7cee24fd4f82751fba2e36ceaa96820d169e32f81389abe624fa0e5c17efa78f.css&quot;,&quot;__theme_url_oceanic_light&quot;:&quot;//static.codepen.io/assets/editor/themes/oceanic-light-17d0218ab07f4feaac1b758cb4868f891ff96cd9a6b08f84e21a11f4468c2507.css&quot;,&quot;__theme_url_mdn_like&quot;:&quot;//static.codepen.io/assets/editor/themes/mdn-like-38c94e2fed17f0966f9b06d23b34418c9f13eba0412e56d97571b7b56e3dfc13.css&quot;,&quot;__theme_url_duotone_light&quot;:&quot;//static.codepen.io/assets/editor/themes/duotone-light-131d69600d4af006535eebd0cfba32accc7e7b36f1e9731b39a6894cce6a2d75.css&quot;,&quot;__theme_url_scoped_twilight&quot;:&quot;//static.codepen.io/assets/editor/themes/scoped/twilight-367bc20b93d3c5ede1158781bdb90483c7e63d0ab26fc3fef3b7843a88426e11.css&quot;,&quot;__theme_url_scoped_solarized_dark&quot;:&quot;//static.codepen.io/assets/editor/themes/scoped/solarized-dark-872f0216b7cb70091bae3d6150c0b71920c1f389b3f7ce72a519bb761518c542.css&quot;,&quot;__theme_url_scoped_tomorrow_night&quot;:&quot;//static.codepen.io/assets/editor/themes/scoped/tomorrow-night-0dd87944c0381dd89e9a740891f90ac37c78dea4a51d1b58d74051a451c3e95d.css&quot;,&quot;__theme_url_scoped_oceanic_dark&quot;:&quot;//static.codepen.io/assets/editor/themes/scoped/oceanic-dark-08cd5a569e89ab7d5dbc9f1ae5e6fb9414f11ceb33b28ecb207a21ae449e305b.css&quot;,&quot;__theme_url_scoped_panda&quot;:&quot;//static.codepen.io/assets/editor/themes/scoped/panda-c7ac63f32cdece76e14a2bb0987847b2388385def49fb1ef66d82e2cfcaef191.css&quot;,&quot;__theme_url_scoped_duotone_dark&quot;:&quot;//static.codepen.io/assets/editor/themes/scoped/duotone-dark-d0ba28cd671fbbca73eeb6cd35083e615eae4bca9786a3360c963ae1ca0a5b6d.css&quot;,&quot;__theme_url_scoped_classic&quot;:&quot;//static.codepen.io/assets/editor/themes/scoped/classic-0e76d2a76a4436cb0e617fd28dc4e4362ad5e1ae2e0f9d37758dd921355d222b.css&quot;,&quot;__theme_url_scoped_solarized_light&quot;:&quot;//static.codepen.io/assets/editor/themes/scoped/solarized-light-6e7ec48dbe6727da017409dfcbdb67aa0fa173660d2e9665ecce4aec0790871d.css&quot;,&quot;__theme_url_scoped_xq_light&quot;:&quot;//static.codepen.io/assets/editor/themes/scoped/xq-light-f91262c203d839669b8d222fdf5dc3ab0dc6e42dc68f168920966b17bc8d6200.css&quot;,&quot;__theme_url_scoped_oceanic_light&quot;:&quot;//static.codepen.io/assets/editor/themes/scoped/oceanic-light-5a78cb735bd0544766c58d02a568b6c17bde98099a3e54e6719edd6271f0cf90.css&quot;,&quot;__theme_url_scoped_mdn_like&quot;:&quot;//static.codepen.io/assets/editor/themes/scoped/mdn-like-97f728e3becd22fc44cb548b7ae95d00791ae5da8e61dbd39e6ee24bcd974221.css&quot;,&quot;__theme_url_scoped_duotone_light&quot;:&quot;//static.codepen.io/assets/editor/themes/scoped/duotone-light-ea6fbdcadc44c2c16f6aa95366fa84f136d916192a8ea7da5797b2c66049be3a.css&quot;}">
+
+  <script src="./HTML5 Editable Table_files/everypage-ab0f017cc96e17c9b907a58673fbdabb0aac2db7c32d82b6d8a9e79340c32d8c.js.download"></script>
+
+
+
+
+  <script src="./HTML5 Editable Table_files/firebase.js.download"></script>
+
+  <script src="./HTML5 Editable Table_files/commonLibs-4e35d846a47bcee0def824c5008644047faa10b6f736314b450d05828b375b7d.js.download"></script>
+<script src="./HTML5 Editable Table_files/codemirror-07961539f5608d3979748d198644081d30f758d024972d9faaf6120f651a6ebe.js.download"></script>
+
+
+
+  <script src="./HTML5 Editable Table_files/index-19def312d9f6a700022439984c8ae68de6ce6ba756e04e3abcd7bf18441bc6b4.js.download"></script>
+
+
+
+
+
+</body></html>
