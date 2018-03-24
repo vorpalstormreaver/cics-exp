@@ -16,17 +16,19 @@
 <body lang=EN-US>
 <script src="assets/js/tableedit.js"></script>
 
+<div><img src="images\oltpdevops.jpg"  width=100%></img></div>
 <div class=WordSection1>
+
 
 <p class=MsoNormal dir=RTL style='text-align:right;direction:rtl;unicode-bidi:
 embed'><span style='position:absolute;z-index:251659264;left:0px;margin-left:
 613px;margin-top:41px;width:136px;height:59px'></span><span lang=HE style='font-family:
-"Arial",sans-serif'>הזן מספר נ&quot;ש: <b>_</b></span><span dir=LTR></span><b><span
-dir=LTR><span dir=LTR></span>_<span style='background:aqua'>reqid</span></span></b><span
-lang=HE style='font-family:"Arial",sans-serif'>                                                         סטאטוס
-נ&quot;ש <b>_</b></span><b><span dir=LTR>reqexternalstat</span></b><span
+"Arial",sans-serif'>הזן מספר נ&quot;ש:</span><span dir=LTR></span><b><span
+dir=LTR><span dir=LTR></span><span style='background:aqua'><input value="reqid" type="text" id="reqid"></span></span></b><span
+lang=HE style='font-family:"Arial",sans-serif'>                              סטאטוס
+נ&quot;ש </span><b><span dir=LTR>reqexternalstat</span></b><span
 dir=RTL></span><b><span lang=HE style='font-family:"Arial",sans-serif'><span
-dir=RTL></span>_</span></b></p>
+dir=RTL></b></p>
 
 <p class=MsoNormal dir=RTL style='text-align:right;direction:rtl;unicode-bidi:
 embed'><span lang=HE style='font-family:"Arial",sans-serif'>פרויקט אחראי: <b>_</b></span><b><span
@@ -52,8 +54,8 @@ embed'><span lang=HE style='font-family:"Arial",sans-serif'>תוכניות חד�
 
 <div align=right>
 
-  <table align='center' cellspacing=2 cellpadding=5 id="data_table" border=1>
-    <tr>
+  <table align='center'  dir=RTL cellspacing=2 cellpadding=5 id="data_table" border=1>
+    <tr  dir=RTL>
     <th>קוד תוכנית</th><th>פעולה</th>
     </tr>
   <tr id="row1">
@@ -72,6 +74,7 @@ embed'><span lang=HE style='font-family:"Arial",sans-serif'>תוכניות חד�
 
   </table>
 </div>
+<br/>
 <div style='border:none;border-bottom:double windowtext 2.25pt;padding:0in 0in 1.0pt 0in'>
 
 <p class=MsoNormal dir=RTL style='text-align:right;direction:rtl;unicode-bidi:
@@ -527,5 +530,8 @@ lang=HE style='font-family:"Arial",sans-serif'><span dir=RTL></span> + תעופ�
 <img src="images\lightgreen.png" width="10%" </img>
 </p>
 </body>
+
+<!-- <%@ include file="faces.html" %>
+-->
 
 </html>
