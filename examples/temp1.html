@@ -1,0 +1,79 @@
+<html>
+<head>
+  <style>
+
+.table-editable {
+  position: relative;
+
+  .glyphicon {
+    font-size: 20px;
+  }
+}
+
+.table-remove {
+  color: #700;
+  cursor: pointer;
+
+  &:hover {
+    color: #f00;
+  }
+}
+
+.table-up, .table-down {
+  color: #007;
+  cursor: pointer;
+
+  &:hover {
+    color: #00f;
+  }
+}
+
+.table-add {
+  color: #070;
+  cursor: pointer;
+  position: absolute;
+  top: 8px;
+  right: 0;
+
+  &:hover {
+    color: #0b0;
+  }
+}
+  </style>
+
+</head>
+<body>
+  <div id="table" class="table-editable">
+      <span class="table-add glyphicon glyphicon-plus"></span>
+
+        <div id="table" class="table-editable">
+          <span class="table-add glyphicon glyphicon-plus"></span>
+          <table class="table">
+            <tr>
+              <th>קוד תוכנית</th>
+              <th></th>
+            </tr>
+            <tr>
+              <td contenteditable="true">TROLSYRY</td>
+              <td>
+                <span class="table-remove glyphicon glyphicon-remove"></span>
+              </td>
+              <td>
+                <span class="table-up glyphicon glyphicon-arrow-up"></span>
+                <span class="table-down glyphicon glyphicon-arrow-down"></span>
+              </td>
+            </tr>
+            <!-- This is our clonable table line -->
+            <tr class="hide">
+              <td contenteditable="true">XXRLPC01</td>
+              <td>
+                <span class="table-remove glyphicon glyphicon-remove"></span>
+              </td>
+              <td>
+                <span class="table-up glyphicon glyphicon-arrow-up"></span>
+                <span class="table-down glyphicon glyphicon-arrow-down"></span>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </body>
